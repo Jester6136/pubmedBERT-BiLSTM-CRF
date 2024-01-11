@@ -2,7 +2,27 @@
 # PubmedBERT - BiLSTM - CRF
 Code for our ICTA 2023 paper "An Architecture for More Fine-grained Hidden Representation in Named Entity Recognition for Biomedical Texts". Please cite our paper if you find this repository helpful in your research:
 
--------cite---------
+```
+@InProceedings{10.1007/978-3-031-49529-8_13,
+author="Tho, Bui Duc
+and Giang, Son-Ba
+and Nguyen, Minh-Tien
+and Nguyen, Tri-Thanh",
+editor="Nghia, Phung Trung
+and Thai, Vu Duc
+and Thuy, Nguyen Thanh
+and Son, Le Hoang
+and Huynh, Van-Nam",
+title="An Architecture for More Fine-Grained Hidden Representation in Named Entity Recognition for Biomedical Texts",
+booktitle="Advances in Information and Communication Technology",
+year="2023",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="114--125",
+abstract="This paper introduces a model for Biomedical Named Entity Recognition (BioNER). Different from existing models that mainly rely on pre-trained models, i.e., PubMedBERT, the proposed model is empowered by using PubMedBERT as the main backbone for mapping input sequences to contextual vectors. To learn more fine-grained hidden representation and effectively adapt to the recognition downstream task, the model stacks BiLSTM and CRFs on top of PubMedBERT. Given an input sentence, the model first maps the sentence into contextual vectors by PubMedBERT. The vectors are next fed into a BiLSTM layer for learning a more fine-grained hidden representation that serves as the input for sequence labeling by using CRFs. We confirm the efficiency of the model on benchmark corpora. Experimental results on 29 diverse datasets indicate that the proposed model obtains promising results compared to good as well as state-of-the-art baselines. The ablation study also shows the behavior of the model in several aspects.",
+isbn="978-3-031-49529-8"
+}
+```
 
 This project implements our PubmedBERT - BiLSTM - CRF. The implementation is build upon [fairseq](https://github.com/pytorch/fairseq), and heavily inspired by [CLNER](https://github.com/Alibaba-NLP/CLNER), many thanks to the authors for making their code avaliable.
 
